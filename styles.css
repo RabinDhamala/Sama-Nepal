@@ -1,0 +1,403 @@
+/* Universal selectors */
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.titles{
+  text-align: center;
+  color: #4BAFE5;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+/* Universal selectors ends here */
+
+
+/* Navigation */
+nav a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white!important;
+  margin-left: 1rem;
+  font-weight: 700;
+}
+nav a:hover{
+  text-decoration: none;
+  color: rgb(5, 50, 77)!important;
+}
+nav li{
+  list-style: none;
+}
+
+.nav-background{
+  background-color: #6BC4F5;
+}
+
+.navbar-toggler-icon{
+  color: white!important;
+}
+
+/* .dropdown:hover>.dropdown-menu {
+  display: block;
+} */
+
+.navbar .dropdown-menu {
+  background-color: rgb(219, 229, 235);
+  /* border: 1px solid black; */
+}
+
+.dropdown-item {
+  color: black!important;
+}
+
+.dropdown-item:hover{
+  background: none!important;
+  font-weight: 600;
+}
+
+
+.header{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 168, 255, 0.3), rgba(0, 168, 255, 0.3)), 
+  url('image/home/cover.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  clip-path: polygon(100% 0%,100% 77%,50% 100%,0% 75%,0 0);
+  position: relative;
+}
+.header:before{
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left:0;
+  right: 0;
+  opacity: 0.4;
+  z-index: -1;
+  background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+}
+
+
+.header-section{
+  width: 100%;
+  height: inherit;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.center-div{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.header-buttons a{
+  border: 1px solid #fff;
+  border-radius: 100px;
+  margin: 0 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+.header-buttons a:hover{
+  color: #50d1c0;
+  background-color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+.center-div h1{
+  font-size: 3rem;
+}
+.center-div p{
+  font-size: 1.5rem;
+  padding: 10px 0 20px 0;
+  color: white;
+}
+.form-control
+{
+  width: 50%;
+  padding-left: 15px;
+}
+
+/* ///////////////home page navigation ends here/////////////////// */
+
+/* //////////home////////////////////// */
+.homeparagraph p{
+  font-size: 16px;
+  text-align: justify;
+}
+
+.objectives h2{
+  color: #41AFE6;
+  font-weight: 700;
+  font-size:  35px;
+}
+.objectives p{
+  font-size:  16px;
+}
+.objectives ul li{
+  font-size:  16px;
+}
+
+.homeribbon{
+  background-color: #41AFE6;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+/* ////////////home ends here////////////////// */
+
+.flex-container div{
+    width: 100%;
+    height:auto;
+}
+
+/* //////////how we work////////////////// */
+.howwework h2{
+  color: #41AFE6;
+  text-align: center;
+  font-weight:  700;
+}
+.howwework p{
+  text-align: center;
+  font-size: 16px;
+}
+.howweworkmiddle{
+  border: 2px solid black;
+}
+.howweworkmiddle h3{
+  font-size:  25px;
+  color:  #41AFE6;
+  font-weight:  700;
+}
+.howweworkmiddle p{
+  text-align: left;
+  font-size:  16px;
+}
+/* ///////////how we work ends here//////////// */
+
+/* //////////////Khudkilo Programme/////////////// */
+.khudkilotext p{
+  font-size:  16px;
+}
+.khudkilomiddle h2{
+  color: blue;
+  text-align: center;
+}
+.khudkilotopheadings{
+  text-align: center;
+  font-size:  35px;
+  font-weight:  700;
+  color:  #41AFE6
+}
+/* //////////////////Khudkilo Programme ends here///////////// */
+
+/* /////////////About Us//////////////// */
+.aboutus{
+  border: 1px solid black;
+}
+.aboutus h2{
+  color: #41AFE6;
+  font-weight: 700;
+}
+.aboutus p{
+  font-size: 16px;
+}
+
+/* ///////////About Us ends here/////////////// */
+
+
+/* ///////////Programmme////////////// */
+.programme h2{
+  color: #41AFE6;
+  font-weight:  500;
+}
+/* /////////////Programme ends here/////////////////// */
+
+/*/////////////testimonial section/////////////*/
+
+.testimonial{
+  margin: 50px auto;
+}
+.testimonial h1{
+  text-align: center;
+  font-weight: bold;
+  color: #ff9800;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.testimonial h1::after{
+  content: '';
+  background: #ff9800;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+
+.testimonial .row{
+  margin-top: 30px;
+
+}
+
+.margintesti{
+  margin: 40px auto;
+}
+
+.profile{
+  padding: 70px 10px 10px;
+  background-color: #efefef;
+}
+.profile img{
+  /*width: 300px;
+  height: 300px;*/
+  top: -60px;
+  position: absolute;
+  left: calc(50% - 60px);
+  border: 10px solid white;
+}
+.testiuser{
+  width:  120px;
+  height:   120px;
+  border-radius:  50%;
+}
+.profile h3{
+  font-size:  20px;
+  margin-top:  15px;
+  color:  #ff9800;
+}
+
+#testispan{
+  font-size:  12px;
+  color:  #333;
+}
+.testiquotes{
+  font-size:  16px;
+  line-height:  30px;
+}
+.testiquotes::before{
+  content:  open-quote;
+  font-size:  4em;
+  position:   relative;
+  color:  #ff9800;
+  line-height:  20px;
+  bottom:   -15px;
+  right:  5px;
+}
+
+.testiquotes::after{
+  content:  close-quote;
+  font-size:  4em;
+  position:   relative;
+  color:  #ff9800 ;
+  line-height:  10px;
+  bottom:   -15px;
+  left:  5px;
+}
+.profile:hover{
+  box-shadow:   0 0 15px 5px rgba(0,0,0,0.2);
+  cursor:   pointer;
+  transition:   0.5s;
+}
+
+/*//////////testimonial section ends here//////////////////*/
+
+/*///////////////Our Team Section Starts//////////////////*/
+/* .ourteamh1{
+  font-size: 36px;
+  color: #555;
+  font-weight: bold;
+} */
+/* .ourteamh3{
+  font-size: 24px;
+  color: #333;
+} */
+
+/* #team img{
+  margin-top: -50px;
+
+}
+#team p{
+  font-weight: 500;
+}
+#team .card{
+  border-radius: 0;
+  box-shadow: 5px 5px 15px #e74c3c;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+}
+#team .card:hover{
+  background: #e74c3c;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 5px 5px 10px #9e9e9e;
+}
+
+#team .card:hover h3{
+  color: #fff;
+
+} */
+
+/* //////////////////To be involved section/////////////// */
+
+.involved-background{
+  width: 100%;
+  height: 60vh;
+  background-image: url('image/involved/Panaroma.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.involved-background h1{
+  text-align: center;
+  color: white;
+  padding: 100px;
+  font-size: 60px;
+}
+#involved{
+  color: #41AFE6;
+  text-align: center;
+  font-size: 25px;
+  font-weight:  700;
+}
+.involvedcolumns h3{
+  text-align:   center;
+  font-size:  18px;
+  font-weight:  700;
+}
+.involvedcolumns p{
+  font-size:  16px;
+  text-align:   center;
+}
+.involvedbottom{
+  width: 100%;
+  height: auto;
+  background-color: #41AFE6;
+}
+.involvedbottom h2{
+  color: white;
+  text-align: center;
+  /*text-size: 36px;*/
+}
+/* //////////To be involved ends here//////////////////// */
+
+/* Footer */
+footer a{
+  float: right;
+  color: blue;
+}
